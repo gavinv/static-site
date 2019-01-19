@@ -1,0 +1,59 @@
+$offset: 6.66px;
+$bgcolor: $base-background-color;
+
+@keyframes skew {
+  0%   { transform: none; }
+  30%   { transform: none; }
+  30.2% { transform: skewX(50deg); }
+  30.4% { transform: skewX(-50deg); }
+  31% { transform: none; }
+}
+@keyframes move {
+  0%   { transform: none; }
+  30%  { transform: none; }
+  31%  { transform: translateX(-$offset); }
+  33%  { transform: none; }
+  98%  { transform: none; }
+  100% { transform: translateX($offset); }
+}
+@keyframes flash {
+  0%   { opacity: 1; }
+  60%  { opacity: 0.75; }
+  // 70%  { opacity: 0.5; }
+}
+
+@keyframes lines {
+  0%   { opacity: 0.1; }
+  50%  { opacity: 1; }
+  100%   { opacity: 0; }
+}
+
+/* ANIMATE UNIQUE SCANLINE */
+@keyframes scanline {
+  0% {
+    transform: translate3d(0, 200000%, 0);
+    // bottom: 0%; // to have a continuous scanline move, use this line (here in 0% step) instead of transform and write, in &:before, { position: absolute; bottom: 100%; }
+  }
+}
+
+@keyframes scanlines {
+  0% {
+    background-position: 0 50%;
+    // bottom: 0%; // to have a continuous scanline move, use this line (here in 0% step) instead of transform and write, in &:before, { position: absolute; bottom: 100%; }
+  }
+}
+
+@keyframes loader {
+  0% { width: 0%; }
+  10% { width: 0%; }
+  20% { width: 10%; }
+  30% { width: 10%; }
+  40% { width: 30%; }
+  50% { width: 40%; }
+  60% { width: 50%; }
+  69% { width: 50%; }
+  70% { width: 75%; }
+  89% { width: 80%; }
+  90% { width: 90%; }
+  100% { width: 100%; }
+}

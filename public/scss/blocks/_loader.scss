@@ -1,0 +1,27 @@
+#loader {
+  width: 40%;
+  height: 2rem;
+  margin: 0 auto;
+  background-color: $licorice;
+  opacity: 0;
+  .progress {
+    background-color: $cherry;
+    width: 100%;
+    height: 100%;
+  }
+  &.loading {
+    opacity: .8;
+  }
+  &.loaded {
+    opacity: 0;
+  }
+}
+
+.container {
+  &.loading {
+    opacity: 0;
+  }
+  &.loaded {
+    opacity: 1;
+  }
+}

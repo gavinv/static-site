@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+// 3rd party libraries
+// The following sass modules are shared with all .scsss files:
+// Normalize.css: http://nicolasgallagher.com/about-normalize-css/
+// Bourbon: http://bourbon.io/docs/
+// Bitters: http://bitters.bourbon.io/  For the structure and base css
+@import "bourbon"; // Bourbon.io
+@import "libraries/fontawesome"; // FontAwesome for SASS
+
+// // Variables
+// // Set variables for this site.
+@import "settings";
+
+// // Mixins
+// // Custom mixins used on this site.
+@import "utilities/mixins";
+
+// // Functions
+// // Custom functions used on this site.
+@import "utilities/functions";
+
+@import "utilities/keyframes";
+
+// //---------------------------------------------------
+
+// // Base
+// // Boilerplate Typography and Base HTML elements
+@import "base/*.scss";
+
+// // Layouts
+// // The layout styling for drupal regions and how they relate to each other
+@import "layout/*.scss";
+
+// // Content Types
+// // Design styles based on content type view modes
+@import "content-types/*";
+
+// // Blocks
+// // Design styles based on block ID divided by page region
+@import "blocks/*.scss";
+
+// // Pages
+// // Design styles based on a unique page url
+@import "pages/*.scss";
+
+// // Shame
+// // Special cases where a browser, etc needs to be targeted.
+// // Also used for developer based files during development only.
+@import "shame/*.scss";
+//

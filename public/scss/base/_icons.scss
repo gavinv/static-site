@@ -1,0 +1,11 @@
+// Social Icons
+$social-icons: ("twitter" "facebook" "google-plus" "linkedin-square" "drupal" "youtube");
+
+@each $icon in $social-icons {
+  .fa-#{$icon} {
+    @include fa-icon($icon);
+    &:hover {
+      color: get-social-media-color($icon);
+    }
+  }
+}

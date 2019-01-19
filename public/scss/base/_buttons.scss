@@ -1,0 +1,44 @@
+.button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $action-color;
+  border: none;
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    // background-color: $light-yellow;
+    text-decoration: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.sharethis-buttons {
+  float: right;
+  margin-top: -50px;
+  clear: right;
+}
+
+.orangeButton {
+  border: 0;
+  background: #f90;
+  color: #000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px
+}

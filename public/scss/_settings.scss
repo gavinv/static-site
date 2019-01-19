@@ -1,0 +1,99 @@
+// Layout
+$max-page-width: 1440px;
+$max-content-width: 1024px;
+$max-sidebar-width: 248px;
+$gutters: 1em;
+$header-height: 124px;
+
+// reds
+$lavender-blush: #fff2f2;
+$cherry-blossom: #F1B0AC;
+$blush: #F48686;
+$cherry: #c44561;
+$amaranth: #744040;
+$purple: rgb(70, 43, 67);
+$licorice: #1a1316;
+// blues
+$mint: #ECF4F1;
+$sky: #97D8DA;
+$deep-sky: #53CED3;
+$slate: #3e8181;
+$steel: #3A5353;
+$midnight: #122226;
+// yellows
+$canary: #ffff99;
+$sunshine: #F3BF64;
+$mustard: #D5A557;
+$sunrise: #DF6A2E;
+// neutrals
+$black: #000;
+$black-stone: #272828;
+$stone: #4C5051;
+$cool-gray: #7A7F84;
+$dark-gray: #9B9B9B;
+$medium-gray: #C1C3C6;
+$light-stone: #DFE1E3;
+$light-gray: #EFEFEF;
+$white: #fff;
+
+// Social Media Color
+$social-colors: (facebook: #3b5998, twitter: #00aced, google-plus: #dd4b39, linkedin-square: #007bb6, drupal: #0077c0, youtube: #bb0000, instagram: #517fa4, pinterest: #cb2027, flickr: #ff0084, tumblr: #32506d, forusquare: #0072b1, dribbble: #ea4c89);
+
+// Font Families
+// Additional font stack variable.
+// A few common stacks in Bourbon at: library\bourbon\addons\_font-stacks.scss
+// Uncomment these Google fonts after addding <link> to html.tpl.php
+// Sans Serif Fonts
+$opensans: "Open Sans", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+// Serif Fonts
+$lora: 'Lora', serif;
+$ubuntu: 'Ubuntu', serif;
+$droidserif: 'Droid Serif', serif;
+$robotoslab: 'Roboto Slab', serif;
+// Icon Fonts
+$fontawesome: "FontAwesome";
+// Monospace
+$ubuntu-mono: 'Ubuntu Mono', monospace;
+// Display
+$audiowide: 'Audiowide', cursive;
+
+
+// Typography
+$base-font-family: $ubuntu;
+$heading-font-family: $ubuntu;
+
+// Font Sizes
+$base-font-size: 14px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 4px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Font Colors
+$base-font-color: $lavender-blush;
+$base-heading-color: $lavender-blush;
+$action-color: $deep-sky;
+
+// Border
+$base-border-color: $cherry;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $licorice;
+$secondary-background-color: $purple;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px $sky;
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

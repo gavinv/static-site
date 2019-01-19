@@ -1,0 +1,15 @@
+.DS_Store
+vendor/
+# public/img/*
+tests/_output/*
+src/settings.php
+tests/_output/*
+docroot/sitemaps/*
+tests/_output/*
+data/*
+.idea/
+*swp
+*swo
+composer.json
+package.json
+old/*

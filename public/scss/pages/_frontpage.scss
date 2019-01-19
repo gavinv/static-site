@@ -1,0 +1,109 @@
+#main-content {
+  h1,
+  span.byline {
+    opacity: .8;
+    font-weight: 600;
+    text-transform: uppercase;
+    // padding: 0 1rem;
+    margin: 0 auto;
+  }
+  span.byline {
+    font-family: $ubuntu-mono;
+    font-weight: 700;
+  }
+  #logosvg {
+    > svg {
+      width: 15rem;
+      height: 15rem;
+      margin-top: 1.25em;
+      float: right;
+    }
+    path {
+      fill: $cherry;
+      opacity: .6;
+      top: 0;
+      left: -$offset;
+      position: relative;
+      mix-blend-mode: screen;
+      animation: skew 2s infinite, flash .04s infinite;
+      filter: url('#f1');
+    }
+  }
+}
+
+.glitchtext {
+  top: 0;
+  left: -$offset;
+  color: $cherry;
+  mix-blend-mode: screen;
+  position: relative;
+  white-space: nowrap;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  filter: blur(1px);
+  animation: skew 2s infinite, flash .04s infinite;
+  
+  &:after, &:before{
+    content: attr(data-text);
+    position: absolute;
+    mix-blend-mode: screen;
+  }
+  &:after{
+    top: 0;
+    left: $offset;
+    color: $deep-sky;
+    animation: move 1.5s infinite;
+  }
+  &:before{
+    top: -0.4*$offset;
+    left: 0.6*$offset;
+    color: $mustard;
+  }
+}
+span.byline.glitchtext {
+  left: -$offset;
+  animation: skew 6s infinite, flash .06s infinite !important;
+  // letter-spacing: .66rem;
+  &:before{
+    top: -0.5*$offset;
+    left: 0.4*$offset;
+    color: $mustard;
+  }
+  &:after{
+    top: -0.5*$offset;
+    left: $offset;
+    animation: move 1.8s infinite;
+  }
+}
+div.contact-info.temp {
+  margin: 7em 8.5em 0;
+  > .glitchtext {
+    opacity: .9;
+    font-size: 24px;
+    font-family: $ubuntu-mono;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    left: -$offset;
+    animation: skew 2s infinite, flash .04s infinite !important;
+    // letter-spacing: .66rem;
+    &:before{
+      opacity: .8;
+      top: -0.33px;
+      left: .6 *$offset;
+      color: $mustard;
+    }
+    &:after{
+      opacity: .9;
+      top: 0px;
+      left: .5*$offset;
+      animation: move 1.8s infinite;
+    }
+    a {
+      opacity: .5;
+      pointer-events: auto;
+    }
+  }
+}

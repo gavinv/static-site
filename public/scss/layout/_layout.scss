@@ -1,0 +1,100 @@
+// Layout
+// ------
+body.path-homepage {
+  margin: 0;
+  &:before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    left: -13vw;
+    width: 113vw;
+    height: 100vh;
+    background-image: url('../img/0.png');
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+#content-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+// Outer Containers - 100% width
+header,
+#preface,
+#search-resources,
+#postscript,
+footer {
+  max-width: 100vw;
+  width: 100%;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 499;
+  width: 100vw;
+  height: $header-height;
+  overflow: hidden;
+  .toolbar-fixed & {
+    top: 39px;
+  }
+  .toolbar-horizontal.toolbar-tray-open & {
+    top: 80px;
+  }
+}
+.after-header {
+  margin-top: $header-height;
+  // .toolbar-vertical & {
+  //   margin-top: $header-height + 39px;
+  // }
+  // .toolbar-horizontal.toolbar-tray-open & {
+  //   margin-top: $header-height + 80px;
+  // }
+}
+
+// Placeholder for centered containers
+%centerer {
+  width: 100%;
+  max-width: $max-page-width;
+  margin: 0 auto;
+}
+
+#main {
+  main {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  aside {
+    flex: 0 1 $max-sidebar-width;
+    padding: 0 $gutters;
+    margin: 0;
+    &.sidebar-first {
+      order: -1;
+      border-right: 1px solid $base-font-color;
+    }
+    &.sidebar-second {
+      border-left: 1px solid $base-font-color;
+    }
+  }
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    main, aside {
+      flex: 1 1 auto;
+      padding: 0 6vw;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+body {
+  font-feature-settings: "kern" 1, "liga" 1, "tnum" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  color: $base-heading-color;
+  line-height: $heading-line-height;
+}
+
+h1 { 
+  font-size: 96px;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+}
+h2 { 
+  font-size: 60px;
+  letter-spacing: -.5px;
+  font-weight: 300;
+}
+h3 { 
+  font-size: 46px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+h4 { 
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+h5 { 
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+h6 { 
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+
+//Page Title
+h1.title {
+  font-family: $audiowide;
+}
+span.byline {
+  font-size: 34px;
+  letter-spacing: .8rem;
+}
+
+span.subheader {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+p.lead-in {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.11px;
+}
+
+caption {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.overline {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+p {
+  margin: 0 0 1.2em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

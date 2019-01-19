@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Styles for base level single element selectors
+
+body {
+  background-color: $licorice;
+
+}
+picture, img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
